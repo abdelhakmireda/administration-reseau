@@ -1,0 +1,516 @@
+
+## 🎬 Introduction
+
+Avant de configurer des serveurs ou sécuriser des systèmes 🔐, il est essentiel de comprendre une chose fondamentale :
+
+👉 **Comment les machines communiquent-elles entre elles ?**
+
+Aujourd’hui, chaque action numérique repose sur un réseau :
+
+* envoyer un message 📱
+* consulter un site web 🌐
+* regarder une vidéo 🎬
+* travailler dans un système d’information 🏢
+
+Le réseau est invisible… mais il est au cœur de tout.
+
+---
+
+## 🌐 1️⃣ Qu’est-ce qu’un réseau informatique ?
+
+### 📌 Définition
+
+Un réseau informatique est un ensemble d’équipements (ordinateurs, serveurs, périphériques) interconnectés afin d’échanger des données.
+
+---
+
+### 🧠 Idée simple
+
+Un réseau permet :
+
+👉 la communication
+👉 le partage
+👉 l’accès aux ressources
+
+---
+
+### 📍 Exemples concrets
+
+| Situation      | Type             |
+| -------------- | ---------------- |
+| WiFi maison 📶 | Réseau local     |
+| Université 🎓  | Réseau interne   |
+| Entreprise 🏢  | Réseau structuré |
+| Internet 🌍    | Réseau mondial   |
+
+---
+
+### 🎯 Exemple réel
+
+Lorsqu’un utilisateur ouvre un site web :
+
+1. Une requête est envoyée 📤
+2. Elle traverse plusieurs réseaux
+3. Le serveur répond 📥
+4. La page s’affiche
+
+👉 Ce processus se fait en quelques millisecondes ⚡
+
+---
+
+## 🌍 2️⃣ Types de réseaux
+
+Les réseaux sont classés selon leur taille et leur portée.
+
+---
+
+### 🏠 🔹 LAN — Local Area Network
+
+Réseau local, limité à une petite zone.
+
+#### 📌 Exemples :
+
+* Maison
+* Salle informatique
+* Bureau
+
+#### ✔ Caractéristiques :
+
+* rapide ⚡
+* sécurisé 🔐
+* faible distance
+
+---
+
+### 🏢 🔹 MAN — Metropolitan Area Network
+
+Réseau couvrant une ville.
+
+#### 📌 Exemple :
+
+* Réseau d’une université répartie sur plusieurs campus
+
+#### ✔ Caractéristiques :
+
+* intermédiaire
+* connecte plusieurs LAN
+
+---
+
+### 🌍 🔹 WAN — Wide Area Network
+
+Réseau étendu à grande échelle.
+
+#### 📌 Exemple :
+
+* Internet
+
+#### ✔ Caractéristiques :
+
+* très grande distance
+* plus lent que LAN
+* dépend de plusieurs infrastructures
+
+---
+
+### 🧠 Comparaison simple
+
+| Type | Portée   | Exemple    |
+| ---- | -------- | ---------- |
+| LAN  | Petite   | Maison     |
+| MAN  | Ville    | Université |
+| WAN  | Mondiale | Internet   |
+
+---
+
+Parfait 👌 très bon ajustement pédagogique :
+👉 **séance 1 = réseau pur (sans virtualisation)**
+👉 on garde l’intro forte + on enchaîne avec **types de réseaux + fonctionnement**
+
+Voici la version améliorée 🔥
+
+---
+
+# 📄 `cours/seance-01-introduction.md`
+
+# 🎓 Séance 01 — Introduction à l’Administration Réseau
+
+---
+
+## 🎬 Introduction
+
+Avant de configurer des serveurs ou sécuriser des systèmes 🔐, il est essentiel de comprendre une chose fondamentale :
+
+👉 **Comment les machines communiquent-elles entre elles ?**
+
+Aujourd’hui, chaque action numérique repose sur un réseau :
+
+* envoyer un message 📱
+* consulter un site web 🌐
+* regarder une vidéo 🎬
+* travailler dans un système d’information 🏢
+
+Le réseau est invisible… mais il est au cœur de tout.
+
+---
+
+## 🌐 1️⃣ Qu’est-ce qu’un réseau informatique ?
+
+### 📌 Définition
+
+Un réseau informatique est un ensemble d’équipements (ordinateurs, serveurs, périphériques) interconnectés afin d’échanger des données.
+
+---
+
+### 🧠 Idée simple
+
+Un réseau permet :
+
+👉 la communication
+👉 le partage
+👉 l’accès aux ressources
+
+---
+
+### 📍 Exemples concrets
+
+| Situation      | Type             |
+| -------------- | ---------------- |
+| WiFi maison 📶 | Réseau local     |
+| Université 🎓  | Réseau interne   |
+| Entreprise 🏢  | Réseau structuré |
+| Internet 🌍    | Réseau mondial   |
+
+---
+
+### 🎯 Exemple réel
+
+Lorsqu’un utilisateur ouvre un site web :
+
+1. Une requête est envoyée 📤
+2. Elle traverse plusieurs réseaux
+3. Le serveur répond 📥
+4. La page s’affiche
+
+👉 Ce processus se fait en quelques millisecondes ⚡
+
+---
+
+## 🌍 2️⃣ Types de réseaux
+
+Les réseaux sont classés selon leur taille et leur portée.
+
+---
+
+### 🏠 🔹 LAN — Local Area Network
+
+Réseau local, limité à une petite zone.
+
+#### 📌 Exemples :
+
+* Maison
+* Salle informatique
+* Bureau
+
+#### ✔ Caractéristiques :
+
+* rapide ⚡
+* sécurisé 🔐
+* faible distance
+
+---
+
+### 🏢 🔹 MAN — Metropolitan Area Network
+
+Réseau couvrant une ville.
+
+#### 📌 Exemple :
+
+* Réseau d’une université répartie sur plusieurs campus
+
+#### ✔ Caractéristiques :
+
+* intermédiaire
+* connecte plusieurs LAN
+
+---
+
+### 🌍 🔹 WAN — Wide Area Network
+
+Réseau étendu à grande échelle.
+
+#### 📌 Exemple :
+
+* Internet
+
+#### ✔ Caractéristiques :
+
+* très grande distance
+* plus lent que LAN
+* dépend de plusieurs infrastructures
+
+---
+
+### 🧠 Comparaison simple
+
+| Type | Portée   | Exemple    |
+| ---- | -------- | ---------- |
+| LAN  | Petite   | Maison     |
+| MAN  | Ville    | Université |
+| WAN  | Mondiale | Internet   |
+
+---
+
+## 🔄 3️⃣ Comment fonctionne un réseau ?
+
+Pour comprendre un réseau, il faut comprendre une idée clé :
+
+👉 **Un réseau fonctionne par échange de données**
+
+---
+
+### 📦 Notion de données
+
+Quand une machine communique, elle envoie :
+
+👉 des données (texte, image, vidéo, etc.)
+
+---
+
+### 📬 Processus simplifié
+
+1. Une machine envoie une information 📤
+2. Cette information est découpée en paquets 📦
+3. Les paquets circulent dans le réseau
+4. La machine destination reçoit et reconstruit les données 📥
+
+---
+
+### 🧠 Exemple concret
+
+Envoyer un message :
+
+👉 "Bonjour"
+
+Le réseau ne l’envoie pas comme ça directement.
+
+Il le transforme en :
+
+```
+[Paquet 1] [Paquet 2] [Paquet 3]
+```
+
+Puis les envoie à travers le réseau.
+
+---
+
+### 🔗 Éléments essentiels du réseau
+
+Pour fonctionner, un réseau a besoin de :
+
+---
+
+#### 🖥️ Machines
+
+* ordinateurs
+* serveurs
+
+---
+
+#### 🔌 Équipements réseau
+
+* routeur
+* switch
+* point d’accès
+
+---
+
+#### 🌐 Adresse IP
+
+Chaque machine doit avoir une identité :
+
+👉 appelée **adresse IP**
+
+Exemple :
+
+```
+192.168.1.10
+```
+
+---
+
+### 🧠 Idée clé
+
+> Un réseau fonctionne uniquement si chaque machine peut :
+> 👉 être identifiée
+> 👉 envoyer
+> 👉 recevoir
+
+---
+
+## 👨‍💻 4️⃣ Le rôle de l’administrateur réseau
+
+Un réseau doit être :
+
+* organisé
+* sécurisé
+* surveillé
+
+---
+
+### 🔹 Missions principales
+
+* configuration des machines
+* gestion des adresses IP 🌐
+* gestion des utilisateurs 👥
+* sécurisation 🔐
+* maintenance
+
+---
+
+### ⚠️ Situations réelles
+
+* perte de connexion Internet
+* serveur inaccessible
+* problème de communication
+
+👉 L’administrateur doit analyser et corriger.
+
+---
+
+## 🧠 5️⃣ Vision globale
+
+Un réseau n’est pas seulement un câble ou du WiFi.
+
+C’est un système composé de :
+
+* machines
+* équipements
+* règles de communication
+
+---
+
+### 📌 Résumé
+
+* réseau = communication 🌐
+* LAN / MAN / WAN = types de réseaux
+* fonctionnement = échange de paquets 📦
+* administrateur = garant du bon fonctionnement
+
+---
+
+
+### 🔗 Éléments essentiels du réseau
+
+Pour fonctionner, un réseau a besoin de :
+
+---
+
+#### 🖥️ Machines
+
+* ordinateurs
+* serveurs
+
+---
+
+#### 🔌 Équipements réseau
+
+* routeur
+* switch
+* point d’accès
+
+---
+
+#### 🌐 Adresse IP
+
+Chaque machine doit avoir une identité :
+
+👉 appelée **adresse IP**
+
+Exemple :
+
+```
+192.168.1.10
+```
+
+---
+
+### 🧠 Idée clé
+
+> Un réseau fonctionne uniquement si chaque machine peut :
+> 👉 être identifiée
+> 👉 envoyer
+> 👉 recevoir
+
+---
+
+## 👨‍💻 4️⃣ Le rôle de l’administrateur réseau
+
+Un réseau doit être :
+
+* organisé
+* sécurisé
+* surveillé
+
+---
+
+### 🔹 Missions principales
+
+* configuration des machines
+* gestion des adresses IP 🌐
+* gestion des utilisateurs 👥
+* sécurisation 🔐
+* maintenance
+
+---
+
+### ⚠️ Situations réelles
+
+* perte de connexion Internet
+* serveur inaccessible
+* problème de communication
+
+👉 L’administrateur doit analyser et corriger.
+
+---
+
+## 🧠 5️⃣ Vision globale
+
+Un réseau n’est pas seulement un câble ou du WiFi.
+
+C’est un système composé de :
+
+* machines
+* équipements
+* règles de communication
+
+---
+
+### 📌 Résumé
+
+* réseau = communication 🌐
+* LAN / MAN / WAN = types de réseaux
+* fonctionnement = échange de paquets 📦
+* administrateur = garant du bon fonctionnement
+
+---
+
+## 🎯 Conclusion
+
+Comprendre les réseaux, c’est comprendre :
+
+👉 comment les machines parlent entre elles
+👉 comment les données circulent
+👉 comment un système entier fonctionne
+
+---
+
+## ❓ Questions de réflexion
+
+1. Quelle est la différence entre LAN, MAN et WAN ?
+2. Pourquoi les données sont-elles découpées en paquets ?
+3. Quel est le rôle d’une adresse IP ?
+4. Quels sont les éléments nécessaires pour qu’un réseau fonctionne ?
+
+---
+
