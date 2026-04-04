@@ -261,46 +261,155 @@ Réseau étendu à grande échelle.
 
 ---
 
+
+
 ## 🔄 3️⃣ Comment fonctionne un réseau ?
 
-Pour comprendre un réseau, il faut comprendre une idée clé :
+Pour comprendre un réseau, il faut comprendre un principe fondamental :
 
-👉 **Un réseau fonctionne par échange de données**
-
----
-
-### 📦 Notion de données
-
-Quand une machine communique, elle envoie :
-
-👉 des données (texte, image, vidéo, etc.)
+> 👉 Les machines ne communiquent pas directement avec des messages “complets”,
+> elles échangent des **paquets de données** 📦
 
 ---
 
-### 📬 Processus simplifié
+## 📦 Notion de paquet
 
-1. Une machine envoie une information 📤
-2. Cette information est découpée en paquets 📦
-3. Les paquets circulent dans le réseau
-4. La machine destination reçoit et reconstruit les données 📥
+Lorsqu’une machine envoie une information (texte, image, vidéo…),
+celle-ci est **découpée en plusieurs petits morceaux** appelés :
+
+👉 **paquets (packets)**
 
 ---
 
-### 🧠 Exemple concret
+### 🧠 Pourquoi découper ?
 
-Envoyer un message :
+Envoyer un gros fichier d’un seul coup serait :
 
-👉 "Bonjour"
+* lent 🐢
+* risqué (si erreur → tout recommencer)
+* inefficace
 
-Le réseau ne l’envoie pas comme ça directement.
+👉 Solution : découper en petits blocs
 
-Il le transforme en :
+---
 
+## 📬 Processus complet de communication
+
+### 🎯 Exemple : envoi d’un message
+
+Un utilisateur envoie :
+
+```id="r5n6fv"
+"Bonjour"
 ```
-[Paquet 1] [Paquet 2] [Paquet 3]
+
+---
+
+### 🧩 Étape 1 — Découpage
+
+Le message est transformé en plusieurs paquets :
+
+```id="3kbzpn"
+[Paquet 1] → "Bon"
+[Paquet 2] → "jour"
 ```
 
-Puis les envoie à travers le réseau.
+---
+
+### 📡 Étape 2 — Transmission
+
+Chaque paquet est envoyé séparément dans le réseau.
+
+👉 Important :
+
+* Les paquets peuvent prendre **des chemins différents**
+* Ils ne voyagent pas forcément ensemble
+
+---
+
+### 🌐 Étape 3 — Transport dans le réseau
+
+Les paquets passent par plusieurs équipements :
+
+* routeurs
+* switchs
+* infrastructures Internet
+
+👉 Chaque équipement décide :
+
+> "Où envoyer ce paquet ensuite ?"
+
+---
+
+### 📥 Étape 4 — Réception
+
+La machine destinataire reçoit les paquets :
+
+```id="p0bujk"
+[Paquet 1]
+[Paquet 2]
+```
+
+---
+
+### 🔄 Étape 5 — Reconstruction
+
+La machine remet les paquets dans le bon ordre :
+
+```id="yce2w6"
+"Bonjour"
+```
+
+---
+
+## ⚠️ Cas réel : perte de paquet
+
+Il peut arriver que :
+
+* un paquet soit perdu ❌
+* arrive en retard ⏱️
+* arrive dans le désordre 🔀
+
+👉 Le réseau gère cela grâce à des mécanismes :
+
+* retransmission
+* numérotation des paquets
+* vérification d’intégrité
+
+---
+
+## 🧠 Analogie simple (très importante)
+
+👉 Le réseau fonctionne comme un service postal 📬
+
+| Réseau     | Poste           |
+| ---------- | --------------- |
+| Donnée     | Lettre          |
+| Paquet     | Enveloppe       |
+| Routeur    | Centre de tri   |
+| Adresse IP | Adresse postale |
+
+---
+
+👉 Tu n’envoies pas un livre entier en une fois,
+tu envoies plusieurs lettres… qui seront reconstituées à l’arrivée.
+
+---
+
+## 💡 Idée clé à retenir
+
+> Un réseau n’envoie jamais une information brute.
+> Il envoie des paquets organisés, transmis, puis reconstruits.
+
+---
+
+## 🎯 Résumé du fonctionnement
+
+1. Découpage 📦
+2. Transmission 📡
+3. Transport 🌐
+4. Réception 📥
+5. Reconstruction 🔄
 
 ---
 
