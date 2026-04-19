@@ -1,4 +1,70 @@
 
+
+# 🧠 🔑 1️⃣ Comprendre le masque en BINAIRE (OBLIGATOIRE)
+
+👉 C’est LA cause principale des blocages en subnetting.
+
+### 🎯 À ajouter dans ton cours
+
+👉 expliquer simplement :
+
+* une IP = 32 bits
+* masque = séparation réseau / machine
+
+### 💬 Phrase prof
+
+👉 “Le subnetting, ce n’est pas de la magie… c’est du binaire”
+
+### 🎯 Exemple simple
+
+```
+IP :     192.168.1.10
+Masque : 255.255.255.0
+
+Binaire :
+11111111.11111111.11111111.00000000
+```
+
+👉 1 = réseau
+👉 0 = machine
+
+---
+
+# 🧠 🔢 2️⃣ Table rapide des masques (À MÉMORISER)
+
+👉 Les étudiants doivent **connaître ça par cœur**
+
+| CIDR | Masque          | Machines |
+| ---- | --------------- | -------- |
+| /24  | 255.255.255.0   | 254      |
+| /25  | 255.255.255.128 | 126      |
+| /26  | 255.255.255.192 | 62       |
+| /27  | 255.255.255.224 | 30       |
+| /28  | 255.255.255.240 | 14       |
+| /29  | 255.255.255.248 | 6        |
+| /30  | 255.255.255.252 | 2        |
+
+---
+
+# 🧠 📏 3️⃣ Notion de “pas” (INCRÉMENT) 🔥🔥🔥
+
+👉 C’est le SECRET du subnetting rapide
+
+### 🎯 Exemple
+
+/26 → masque : 255.255.255.192
+
+👉 PAS = 256 - 192 = **64**
+
+👉 donc réseaux :
+
+* 192.168.1.0
+* 192.168.1.64
+* 192.168.1.128
+* 192.168.1.192
+
+---
+
 ---
 
 # 🎯 🧠 Bloc 1 — Questions simples (Compréhension de base)
