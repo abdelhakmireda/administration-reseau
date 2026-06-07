@@ -463,7 +463,7 @@ Ethernet
 
 | TCP      | UDP            |
 | -------- | -------------- |
-| fiable   | rapide         |
+| fiable   | fiable! rapide         |
 | connecté | sans connexion |
 | ACK      | pas ACK        |
 | web      | DNS/streaming  |
