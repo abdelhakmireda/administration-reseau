@@ -676,3 +676,127 @@ Compléter :
 ✔ La connexion est-elle en ouverture, en cours ou en fermeture ?
 
 ✔ Quelle est la nature de la communication observée ?
+
+---
+
+# ✏️ ✏️ Exercice 7 : Analyse complète (HTTPS SYN-ACK)
+
+```text
+AA AA AA AA AA AA
+CC CC CC CC CC CC
+08 00
+
+45 00 00 3C
+1A 2B 40 00
+40 06 A1 B2
+
+C0 A8 01 64
+8E FA B4 0E
+
+D4 31 01 BB
+
+00 00 00 00
+00 00 00 00
+
+50 12 72 10
+A1 B2 00 00
+
+```
+
+---
+
+## 📌 Questions
+
+1. Quelle est la MAC destination ?
+2. Quelle est la MAC source ?
+3. Quelle est la valeur EtherType ?
+4. Quelle est la version IP ?
+5. Quelle est la taille du paquet ?
+6. Quelle est la valeur TTL ?
+7. Quel protocole est utilisé ?
+8. Quelle est l’IP source ?
+9. Quelle est l’IP destination ?
+10. Quel est le port source ?
+11. Quel est le port destination ?
+12. Quel service est utilisé ?
+13. Quels flags sont actifs ?
+14. À quelle étape de la connexion correspond cette trame ?
+
+---
+
+## 🧠 Indice étudiant
+
+* Port 443 = HTTPS 🔐
+* Flags `50 12` = SYN + ACK 🔁
+* TTL 64 = Linux 🐧
+
+---
+
+# ✏️ ✏️ Exercice 8 : Analyse complète (DNS UDP)
+
+```text
+11 11 11 11 11 11
+22 22 22 22 22 22
+08 00
+
+45 00 00 2C
+B4 12 00 00
+40 11 7C D3
+
+C0 A8 01 0A
+08 08 08 08
+
+E1 23 00 35
+00 18
+
+44 4E 53 01 00
+```
+
+---
+
+## 📌 Questions
+
+1. Quelle est la MAC destination ?
+2. Quelle est la MAC source ?
+3. Quelle est la valeur EtherType ?
+4. Quelle est la version IP ?
+5. Quelle est la taille du paquet ?
+6. Quelle est la valeur TTL ?
+7. Quel protocole est utilisé ?
+8. Quelle est l’IP source ?
+9. Quelle est l’IP destination ?
+10. TCP ou UDP ?
+11. Quel est le port destination ?
+12. Quel service est utilisé ?
+13. Que signifie le payload ?
+
+---
+
+## 🧠 Indice étudiant
+
+* `11` = UDP 🚀
+* Port 53 = DNS 🔎
+* Payload “DNS” = requête de résolution de nom
+
+---
+
+# 🎯 Remarque pédagogique (important)
+
+Ces deux exercices couvrent :
+
+✔ Exercice 7 → TCP (HTTPS + SYN/ACK)
+✔ Exercice 8 → UDP (DNS request)
+
+👉 Donc tu as maintenant :
+
+* Ethernet
+* IP
+* TCP
+* UDP
+* Flags
+* Ports
+* Payload
+
+💡 Ce sont exactement les 2 cas les plus importants en examen Wireshark.
+
+
