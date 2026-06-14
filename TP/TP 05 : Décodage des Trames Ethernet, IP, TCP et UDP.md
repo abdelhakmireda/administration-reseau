@@ -1,4 +1,4 @@
-# 🧪 TP N°6 : Interprétation des Trames Hexadécimales avec Wireshark
+# 🧪 TP 05 : Interprétation des Trames Hexadécimales avec Wireshark
 
 ## 🎯 Objectifs
 
